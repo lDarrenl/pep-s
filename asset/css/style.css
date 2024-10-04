@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header {
+    background-image: url('/asset/img/bg-slider-06.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .header-content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .store-section {
+    display: flex;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .store-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .store-text {
+    max-width: 50%;
+  }
+  
+  .store-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #af7746;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .store-text h2 span {
+   color: black;
+  }
+  
+  .store-text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .chef-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chef-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .store-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  @media (max-width: 750px) {
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .store-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .store-text, .store-image {
+      max-width: 60%;
+    }
+  
+    .store-text {
+      margin-bottom: 30px;
+    }
+  } 
+ 
+  @media (max-width: 350px) {
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .store-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .store-text, .store-image {
+      max-width: 30%;
+    }
+  
+    .store-text {
+      margin-bottom: 30px;
+    }
+  }
+  
